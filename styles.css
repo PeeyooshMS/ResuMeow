@@ -16,10 +16,12 @@
     padding: 1.5rem;
 }
 
-hr {
+.line {
     color:  #0B0A0A;
     margin: 0.5rem 0;
-    
+    width: 100%;
+    border: 1px solid #0b0a0a;
+    display: inline-block; 
 }
 
 .header {
