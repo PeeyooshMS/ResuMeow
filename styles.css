@@ -41,7 +41,7 @@
 
 .line {
   color: var(--text-color);
-  margin: var(--margin-bottom-1) 0;
+  margin:  0;
   width: 100%;
   border: 1px solid var(--text-color);
   display: inline-block;
@@ -111,21 +111,18 @@
 
 .project .project-card {
   font-size: var(--normal-text);
-  padding: var(--margin-bottom-1);
+  padding: 0.3rem;
 }
 
-.project-card h5 {
-  text-transform: var(--text-transform);
-  font-size: var(--h5-text);
-}
 
 .project-card a {
   font-style:var(--font-style);
   color: var(--text-color);
+  font-size: var(--small-text);
 }
 
 .project-card span {
-    font-size: var(--h4-text);
+    font-size: var(--h5-text);
 }
 
 .project-card ol {
