@@ -3,119 +3,186 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
   box-sizing: border-box;
   font-family: poppins, sans-serif;
 }
 
+:root {
+  --small-text: 0.81rem;
+  --normal-text: 0.9167;
+  --h4-text: 1rem;
+  --h5-text: 0.88rem;
+  --h1-text: 1.5rem;
+  --h2-text: 1.25rem;
+  --text-color: #0b0b0b;
+
+  --border-project : 1px solid #313131;
+
+  --text-transform :uppercase;
+
+  --letter-space: 1.5px;
+  --bold-1: 700;
+  --bold-2: 600;
+  --bold-3: 500;
+  --bold-4: 300;
+
+  --margin-bottom-1: 0.5rem;
+  --margin-bottom-2: 0.3rem;
+
+  --font-style:italic;
+}
+
 .container {
-    width: 700px;
-    height: 800px;
-    margin: 50px auto;
-    background-color: skyblue;
-    padding: 1.5rem;
+  width: 800px;
+  margin: 20px auto;
+  background-color: skyblue;
+  padding: 1.5rem;
 }
 
 .line {
-    color:  #0B0A0A;
-    margin: 0.5rem 0;
-    width: 100%;
-    border: 1px solid #0b0a0a;
-    display: inline-block; 
+  color: var(--text-color);
+  margin: var(--margin-bottom-1) 0;
+  width: 100%;
+  border: 1px solid var(--text-color);
+  display: inline-block;
 }
+
 
 .header {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
-.header .personal-info h1{
-    font-size: 1.5rem;
-    text-transform: uppercase;
+.header .personal-info h1 {
+  font-size: var(--h1-text);
+  text-transform: var(--text-transform);
 }
 
-.header .personal-info p{
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+.header .personal-info p {
+  font-size: var(--h2-text);
+  text-transform: var(--text-transform);
+  font-weight: 700;
+  letter-spacing: var(--letter-space);
 }
 
 .header .personal-info span {
-    font-size: .875rem;
-    font-weight: 600;
+  font-size: var(--normal-text);
+  font-weight: 600;
+}
+
+.header .personal-info span a {
+  font-weight: 400;
+  font-style:var(--font-style);
+  color: var(--text-color);
 }
 
 .header .contact-info {
-    font-size: 0.81rem;
+  font-size: var(--small-text);
+  margin-top: 5px;
 }
 
-.header .contact-info a{
-    text-decoration: none;
-    color:  #0B0A0A;
+.header .contact-info a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 .summery {
-    font-size: .875rem;
+  font-size: var(--normal-text);
 }
 
-.content-body .technical-skill h4{
-    font-size: 1rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 0.3rem;
+.content-body .technical-skill h4 {
+  font-size: 1rem;
+  letter-spacing:var(--letter-space);
+  margin-bottom: var(--margin-bottom-2);
 }
 
-.content-body .technical-skill .skills{
-    font-size: 0.875rem;
+.content-body .technical-skill .skills {
+  font-size: var(--normal-text);
 }
 
-.content-body .technical-skill .skills .skill-section b{
-    font-weight: 600;
+.content-body .technical-skill .skills .skill-section b {
+  font-weight: 600;
 }
 
-.project h4{
-    font-size: 1rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 0.3rem;
+.project h4 {
+  font-size: 1rem;
+  letter-spacing:var(--letter-space);
+  margin-bottom:var(--margin-bottom-2);
 }
 
 .project .project-card {
-    font-size: 0.875rem;
-    padding: 0.5rem;
-}
-    
-.project-card h5{
-    text-transform: uppercase;
+  font-size: var(--normal-text);
+  padding: var(--margin-bottom-1);
 }
 
-.project-card h5 a{
-    text-transform: none;
-    font-weight: 400;
+.project-card h5 {
+  text-transform: var(--text-transform);
+  font-size: var(--h5-text);
 }
 
-.project-card ol{
-    margin-left: 1rem;
+.project-card a {
+  font-style:var(--font-style);
+  color: var(--text-color);
 }
 
-.education h4{
-    font-size: 1rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 0.3rem;
+.project-card span {
+    font-size: var(--h4-text);
 }
 
-.education p{
-    font-size:0.875rem;
+.project-card ol {
+  margin-left: 1rem;
 }
 
-.education .clg{
-    font-weight: 600;
+.education h4 {
+  font-size: 1rem;
+  letter-spacing:var(--letter-space);
+  margin-bottom:var(--margin-bottom-2);
 }
 
-.education span{
-    font-size:0.81rem;
-    font-weight: 300;
+.education p {
+  font-size: var(--normal-text);
 }
 
-.education p b{
-    font-weight: 600;
+.education .clg {
+  font-weight: 600;
+}
+
+.education span {
+  font-size: 0.81rem;
+  font-weight: 300;
+}
+
+.education p b {
+  font-weight: 600;
+}
+
+button {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 19rem;
+  background-color: var(--text-color);
+  border: none;
+  outline: none;
+  color: white;
+  border-radius:0.3rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.5sec ease;
+}
+
+button:hover {
+  color: var(--text-color);
+  background: white;
+  border: 3px solid var(--text-color);
+  font-weight: 600;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .container * {
+    visibility: visible;
+  }
 }
